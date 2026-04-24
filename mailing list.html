@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DATES</title>
+    <title>MAILING LIST</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +31,7 @@
         text-align: center;
         background-image: url('images/spooky banner.png');
         background-size: contain;
+        font-family: "Geist Mono", monospace;
     }
     .button { 
         border: none; 
@@ -51,6 +52,19 @@
 
     }
 
+.email-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.email-text {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    gap: 110px;
+}
     </style>
 </head>
 <body>
@@ -59,15 +73,34 @@
     
     <a href="bio.html" class="button">BIO</a>
     <a href="music.html" class="button">MUSIC</a>
-    <a href="mailing list.html" class="button">MAILING LIST</a>
+    <a href="dates.html" class="button">DATES</a>
+
 
     <br>
 
     <div class="bio-text">
-    <p> i don't have any dates lol </p>
+    <p> yap at me in my emailssss </p>
     </div>
 
-    <img id="lol" src="images/lol.JPG" style:display="inline-block"; width="400px" height="400px">
+    <br>
+    <br>
+    <br>
+
+<div class="email-text">
+    <p> NAME </p>
+    <p> EMAIL </p>
+    <p> MESSAGE </p>
+</div>
+
+<div class="email-form">
+    <form action="https://api.web3forms.com/submit" method="POST">
+     <input type="hidden" name="access_key" value="e3b97d3b-04c7-46fe-97a6-28a3b5dde15c">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <textarea name="message" required></textarea>
+     <button type="submit">Submit</button>
+    </form>
+</div>
 
 </body>
 </html>
